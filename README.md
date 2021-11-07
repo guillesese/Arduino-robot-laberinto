@@ -34,7 +34,7 @@ En cuanto se cumple una de estas dos condiciones paramos el robot y cambiaríamo
 -	Caso 3. En este caso, el funcionamiento sería similar al caso 2 pero con las particularidades de este caso. 
 -	Caso 4. A este caso llegamos cuando se produce la interrupción de detección de fin. En el caso de que el detector detecte que realmente ha llegado al fin, encenderá el led. Sin embargo, cuando el sensor pierda la detección es posible que lo hayamos levantado por lo que el robot pasará a un estado 0. 
 
-### ROBOT ###
+## ROBOT ##
 Aquí podemos ver cómo ha quedado la maqueta del robot. Para la elaboración de la misma, he utilizado una caja de zapatos de cartón, piezas de lego para la rueda delantera, celo y una pistola termoselladora. 
 
 ![image](https://user-images.githubusercontent.com/16133041/140657987-43b2a465-624b-4a81-acf0-eeaf4f2f7fe0.png)
