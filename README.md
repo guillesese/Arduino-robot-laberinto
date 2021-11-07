@@ -19,13 +19,13 @@ A continuación, están las funciones que se ejecutan cuando se producen las IRQ
 - Función deteccion_fin. Se ejecuta al producirse la IRQ cuando se produce un cambio en el sensor de infrarrojos. En el caso en el que el sensor detecte el fin del circuito, cambiará el estado del robot al último estado, el de fin. 
 - Otra función importante es la de mover_robot. Esta función mueve los servos de rotación continua durante un tiempo determinado. Tanto la velocidad/sentido de giro de cada uno, como el tiempo, son valores que se le pasan a la función como parámetros. 
 
-** Función setup **
+**Función setup**:
 En este punto se inicializan cada uno de los componentes asignándoles los valores de entrada/salida y los pines a los que están conectados. 
 Dentro de la función setup se encuentran las dos definiciones de las interrupciones que hay en el código del programa. 
 -	La primera IRQ se registra cuando en el pin 2 (botón) se produce un cambio del estado de 1 a 0. En ese momento se ejecutará la función cambio_estado_robot. 
 -	La segunda IRQ se registra cuando en el pin 3 (sensor de infrarrojos) hay un cambio de estado independientemente de si es de 1 a 0 o de 0 a 1.
 
-** Función loop **
+**Función loop**:
 En función del estado del robot se ejecutarán una serie de instrucciones.
 -	Caso 0. Caso inicial del robot. En este estado, el robot estará parado. Los servos estarán parados, es decir a 90º y deberemos cerciorarnos de que el led de fin sigue apagado. 
 - Caso 1. Tras la pulsación del botón, entraremos en este estado. En primer lugar, se obtiene la distancia que hay hasta el obstáculo. Mientras la distancia sea menor que la fijada como límite, deberemos mover el robot hacia adelante comprobando cada segundo la distancia hasta el próximo obstáculo. Junto a la distancia, deberemos también comprobar en el bucle si seguimos en estado 1. 
@@ -36,6 +36,7 @@ En cuanto se cumple una de estas dos condiciones paramos el robot y cambiaríamo
 
 ### ROBOT ###
 Aquí podemos ver cómo ha quedado la maqueta del robot. Para la elaboración de la misma, he utilizado una caja de zapatos de cartón, piezas de lego para la rueda delantera, celo y una pistola termoselladora. 
+
 ![image](https://user-images.githubusercontent.com/16133041/140657987-43b2a465-624b-4a81-acf0-eeaf4f2f7fe0.png)
 
 #### VÍDEO ####
